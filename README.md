@@ -22,6 +22,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'stephpy/vim-yaml'
+Plug 'yggdroot/indentline'
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
@@ -34,6 +36,10 @@ let g:airline_theme='papercolor'
 " Indentiline
 let g:indentLine_char = '.'
 let g:indentLine_enabled = 0
+
+" https://vimawesome.com/plugin/markdown-syntax
+" Disable Folding
+let g:vim_markdown_folding_disabled = 1
 ```
 
 Para ```instalar``` um ou mais plugins excuto o comando ```:PlugInstall``` diretamente no editor vim.
@@ -54,3 +60,28 @@ Para esse plugin utilizo um mapeamento de tecla na qual me permite chamar o expl
 " Keybind NERDTree
 map <F2> :NERDTreeToggle<CR>
 ```
+
+[vim-airline](https://vimawesome.com/plugin/vim-airline) adiciona uma barra de status na parte inferior do editor, permitindo uma rápida compreensão do status do arquivos e alguns informações adicionais.
+
+[vim-airline-themes](https://vimawesome.com/plugin/vim-airline-themes) me permite aplicar alguns temas no editor. É puro capricho, mas pra mim ajuda. Utilizo o tema chamado ```papercolor```. Para saber quais os temas disponíveis basta [clicar aqui](https://github.com/vim-airline/vim-airline/wiki/Screenshots).
+
+```
+" VIM Airline Theme
+let g:airline_theme='papercolor'
+```
+
+[vim-yaml](https://vimawesome.com/plugin/vim-yaml) é para melhorar o dia à dia do ```YAML Engineer```, pois garante a identação dos arquivos YAML.
+
+[indentline](https://vimawesome.com/plugin/indentline) me permite visualizar os níveis de indentação. Dessa forma evito erros devido a má indentação nos arquivos YAML ou Python, por exemplo, que são rigorosos nesse ponto.
+
+Por padrão essa visualização dos níveis de indentação no meu editor fica desabilitada, pois aciono apenas quando julgo ser necessário digitando o comando ```:IndentLinesEnable```.
+
+```
+" Indentiline
+let g:indentLine_char = '.'
+let g:indentLine_enabled = 0
+```
+
+[vim-markdown](https://vimawesome.com/plugin/markdown-syntax) se trata de syntax highlighting para escever em Markdown no editor VIM.
+
+Utilizo a opção abaixo para desabilitar o recurso de foldind que me permite ocultar ou expandir blocos de textos organizados por indentação.
