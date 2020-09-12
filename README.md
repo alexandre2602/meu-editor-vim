@@ -2,14 +2,18 @@
 
 As configurações que utilizo no VIM me ajudam a trabalhar com demandas relacionadas a SysOps/DevOps.
 
-01. Instalação do [vim-plug](https://github.com/junegunn/vim-plug) que nada mais é que um gerenciador de plugins bem simples e eficiente. A partir dele instalo, removo ou atualizo todos os plugins utilizados no vim.
+**01. Instalação do gerenciador de plugins.**
+
+O [vim-plug](https://github.com/junegunn/vim-plug), que nada mais é que um gerenciador de plugins bem simples e eficiente, me permite instalar, remover e atualizar todos os plugins utilizados no vim.
 
 Para instalar só preciso executar o comando abaixo.
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-02. Para configurar os comportamentos do vim gosto de utilizar um arquivo secundário ao ```/etc/vimrc``` que irá ser válido apenas para o meu usuário. Só preciso criar o arquivo ```~/.vimrc``` e inserir o conteúdo abaixo.
+**02. Arquivos de configuração.**
+
+Para configurar os comportamentos do vim gosto de utilizar um arquivo secundário ao ```/etc/vimrc``` que irá ser válido apenas para o meu usuário. Só preciso criar o arquivo ```~/.vimrc``` e inserir o conteúdo abaixo.
 
 ```
 call plug#begin()
@@ -38,7 +42,9 @@ Para atualizar um ou mais plugins executo o comando ```:PlugUpdate``` no editor 
 
 Para entender melhor o ```vim-plug``` basta conferir o repositório [junegunn/vim-plug](https://github.com/junegunn/vim-plug) no Github.
 
-03. Uma breve descrição acerca dos plugins declarados acima, no arquivo ```.vimrc```.
+**03. O porquê de cada plugin.**
+
+Uma breve descrição acerca dos plugins declarados acima, no arquivo ```.vimrc```.
 
 [nerdtree](https://vimawesome.com/plugin/nerdtree-red) é um explorador de arquivos. Com ele consigo navegar numa estrutura de diretórios e trabalhar com vários arquivos, semelhante ao mais famosos editores do mercado, como Visual Studio Code e Sublime Text, por exemplo.
 
