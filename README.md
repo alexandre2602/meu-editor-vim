@@ -90,7 +90,11 @@ let g:indentLine_enabled = 0
 
 Utilizo a opção abaixo para desabilitar o recurso de foldind que me permite ocultar ou expandir blocos de textos organizados por indentação.
 
+<<<<<<< HEAD
 [dracula](https://draculatheme.com/vim) apenas um tema dark bonitão para utilizar no VIM.
 ```
 colorscheme dracula
 ```
+=======
+[dracula](https://draculatheme.com/vim) apenas um tema dark bonitão para utilizar no VIM.
+>>>>>>> cca932ccc0944b0abd235b68fed45fce12d85eb3
