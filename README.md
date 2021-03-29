@@ -24,6 +24,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'stephpy/vim-yaml'
 Plug 'yggdroot/indentline'
 Plug 'plasticboy/vim-markdown'
+Plug 'dracula/vim',{'as':'dracula'}
 
 call plug#end()
 
@@ -40,6 +41,9 @@ let g:indentLine_enabled = 0
 " https://vimawesome.com/plugin/markdown-syntax
 " Disable Folding
 let g:vim_markdown_folding_disabled = 1
+
+syntax on
+colorscheme dracula
 ```
 
 Para ```instalar``` um ou mais plugins excuto o comando ```:PlugInstall``` diretamente no editor vim.
@@ -85,3 +89,8 @@ let g:indentLine_enabled = 0
 [vim-markdown](https://vimawesome.com/plugin/markdown-syntax) se trata de syntax highlighting para escever em Markdown no editor VIM.
 
 Utilizo a opção abaixo para desabilitar o recurso de foldind que me permite ocultar ou expandir blocos de textos organizados por indentação.
+
+[dracula](https://draculatheme.com/vim) apenas um tema dark bonitão para utilizar no VIM.
+```
+colorscheme dracula
+```
